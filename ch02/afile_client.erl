@@ -7,7 +7,7 @@
 %%  Visit http://www.pragmaticprogrammer.com/titles/jaerlang2 for more book information.
 %%---
 -module(afile_client).
--export([ls/1, get_file/2]).
+-export([ls/1, get_file/2, put_file/3]).
 
 ls(Server) ->
     Server ! {self(), list_dir},
@@ -23,3 +23,9 @@ get_file(Server, File) ->
 	    Content
     end.
 
+put_file(Server, File, Body) ->
+    Server ! {self(), {put_file, File, Body}},
+    receive
+        {Server, Content} ->
+            Content
+    end.
