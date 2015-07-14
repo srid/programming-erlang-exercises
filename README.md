@@ -6,7 +6,7 @@ Book link: https://pragprog.com/book/jaerlang2/programming-erlang
 
 ### Pros
 
-- Brevity in writing, yet possible to achieve an easy [reading flow](https://en.wikipedia.org/wiki/Flow_(psychology))
+- Joe's writing has a welcome brevity; it leads to a fast [reading flow](https://en.wikipedia.org/wiki/Flow_(psychology))
 
 ### Cons
 
